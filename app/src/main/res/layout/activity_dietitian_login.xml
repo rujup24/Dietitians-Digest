@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rujuu.dietitiansdigest.Dietitian_loginActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/heading_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textColor="#598527"
+            android:textSize="30sp"
+            android:text="Dietitian's Digest" />
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dietician's Login"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:textAlignment="center"
+            android:textColor="#ec101f"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:layout_gravity="center"
+            android:background="#88ffffff"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="366dp"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/login_dit_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Login ID"
+                    android:layout_marginLeft="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_edittext"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_nameicon1" />
+
+                    <EditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_edittext"
+                        android:hint="Full Name"
+                        android:inputType="text"
+                        android:textColor="#734631" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/pwd_dit_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_edittext"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_passwordicon" />
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_edittext"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:textColor="#734631" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/submit_dit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter"
+                    android:onClick="Loginclick"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="#f8a125"
+                    />
+                <TextView
+                    android:id="@+id/signin_dit_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="not registered?"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:onClick="redirect"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+

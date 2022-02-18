@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rujuu.dietitiansdigest">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_pear"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".userSigninActivity" />
+        <activity android:name=".medicalDetailsActivity" />
+        <activity android:name=".Dietitian_loginActivity" />
+        <activity android:name=".Dietician_reg" />
+        <activity
+            android:name=".Dietician_profile"
+            android:label="Dietician&apos;s Profile"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Patient_profile"
+            android:label="Patient's Profile"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Sendchart" />
+        <activity android:name=".Dashboard" />
+        <activity android:name=".Calorie_counter" />
+        <activity android:name=".dietitian_dashboard" />
+        <activity
+            android:name=".diet_chart"
+            android:label="@string/title_activity_diet_chart"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>
